@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faturamento</title>
+
+    <link rel="icon" href="logo.RA.png" type="image/png">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="faturamento.css">
+</head>
+<body>
+    <div class="top-bar text-center">
+        <button id="backButton" class="btn btn-primary">VOLTAR</button>
+        <button id="dashboardButton" class="btn btn-primary">Dashboards</button>
+    </div>
+    <div class="content">
+        <img src="logo RA.png" alt="Descrição da Imagem" id="customImage">
+        <canvas id="vlSolicitadoLineChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> 
+    <script src="faturamento.js"></script> 
+</body>
+</html>

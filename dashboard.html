@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Unificado</title>
+    <link rel="icon" href="logo.RA.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="top-bar text-center">
+        <button id="backButton" class="btn btn-primary">VOLTAR</button>
+    </div>
+
+    <div class="sidebar">
+        <h2></h2> 
+        
+        <p class="text-center">Tipos de gráficos</p>
+
+        <ul>
+            <li><a href="#">Gráfico Verde (Quantidade de OP's por pedidos)</a></li>
+            <li><a href="#">Gráfico Vermelho (Quantidade de Peças Paradas por OP)</a></li>
+            <li><a href="#">Gráfico Linha (Valor Lojista de OP's Paradas)</a></li>
+            <li><a href="#">Gráfico Azul  (Quantidades de Peças por Grupo)</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <canvas id="pedidosChart" class="chart pedidosChart"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <canvas id="groupChart" class="groupPieChart"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <canvas id="quantidadeChart" class="chart quantidade"></canvas>
+                </div>
+                <div class="col-md-6">
+                    <canvas id="vlSolicitadoLineChart" class="chart line-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+
+    <link rel="icon" href="logo.RA.png" type="image/png">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="pedidos.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="top-bar text-center">
+        <button id="backButton" class="btn btn-primary">VOLTAR</button>
+        <button id="faturamentoButton" class="btn btn-primary">FATURAMENTO</button>
+    </div>
+
+    <div class="container">
+        <canvas id="pedidosChart"></canvas>
+    </div>
+
+    <div class="bottom-boxes">
+        <div class="box blue-box">
+            <span class="label-text">LOJISTA</span>
+            <span class="value-text">829 pçs</span>
+        </div>
+        <div class="box blue-box">
+            <span class="label-text">LOJA</span>
+            <span class="value-text">1203 pçs</span>
+        </div>
+        <div class="box blue-box">
+            <span class="label-text">TRIAGEM </span>
+            <span class="value-text">1348 pçs</span>
+        </div>
+    </div>
+
+    <script src="pedidos.js"></script> 
+</body>
+</html>

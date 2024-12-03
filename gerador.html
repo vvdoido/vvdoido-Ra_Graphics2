@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCP Dashboards</title>
+    
+    <link rel="icon" href="/mnt/data/image.png" type="image/png"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="gerador.CSS">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+            <div class="circle">
+                <img src="CP-FT ATT.jpeg" alt="Logo">
+            </div>
+            <button id="chartsButton" class="btn btn-primary">Gráficos</button> 
+        </div>
+        <div class="center-text">PPCP</div>
+        <button id="logoutButton" class="btn btn-danger">Sair</button>
+    </div>
+    
+
+    <div class="container text-center">
+        <div id="fileUploadImage">
+            <img src="logo.RA.png" alt="Upload Image" width="200" height="100"> 
+        </div>
+        <input type="file" id="fileUpload" accept=".xlsx, .xls" class="btn btn-dark btn-lg mt-5">
+        <div id="loadingMessage" class="mt-5" style="display:none;">Carregando...</div>
+
+        <div class="mt-4">
+            <input type="text" id="globalSearch" class="form-control" placeholder="Pesquisar em todas as colunas...">
+        </div>
+        
+        <div id="spreadsheetContent" class="mt-5 table-responsive scrollbar-custom"></div>
+        <div id="pagination" class="mt-3"></div>
+    </div>
+
+    <div class="bottom-right">
+        <button id="sendButton">
+            <img src="gmail-logo-000.png" alt="Enviar" width="40" height="40">
+        </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="gerador.JS"></script>
+</body>
+</html>

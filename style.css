@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    background-color: #000; 
+    border: 5px solid rgba(255, 255, 255, 0.3); 
+}
+
+.bg-black {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+
+.top-text-container {
+    text-align: center;
+    margin-bottom: auto; 
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.middle-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+    text-align: center;
+}
+
+.imagem-centro {
+    max-width: 700px; 
+}
+
+.bg-modelo {
+    background-image: url('Loading\ page\ -7.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.login-form {
+    background: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 8px;
+}
+
+.form-control {
+    background: transparent; 
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+.btn-secondary {
+    background-color: #555; 
+    border: none; 
+}
+
+.btn-secondary:hover {
+    background-color: #777; 
+}
